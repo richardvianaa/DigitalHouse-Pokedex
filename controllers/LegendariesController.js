@@ -1,10 +1,9 @@
+const legendaryModel = require('../models/LegendaryModel');
+
 const controller = {
     getoneLegendary: (req, res) => {
-        return res.json({
-            name: "Pineco",
-            categoria: "Bagworm",
-            type: "bug"
-        });
+        const model = new legendaryModel("01", "Pineco", "Bagworm", "bug")
+        return res.json(model);
     }
 }
 
