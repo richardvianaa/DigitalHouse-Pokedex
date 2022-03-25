@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="pt-br">
+
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+            <section class="container-baner">
+                <img src="/images/BannerComplete.png" alt="Baner Pikachu">
+                <div class="container-txt">
+                    <h1><strong>Find</strong> all your favorite <strong>Pokemon</strong></h1>
+                    <p>You can know the type of Pokemon, its strengths, <br> disadvantages and abilities</p>
+                    <button type="submit">See pokemons</button>
+                </div>
+            </section>
+            <%- include('./partials/footer') %>
+    </body>
+
 </html>
