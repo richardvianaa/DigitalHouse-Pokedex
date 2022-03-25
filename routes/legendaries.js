@@ -5,7 +5,7 @@ const router = express.Router();
 const legendariesController = require('../controllers/LegendariesController');
 
 
-router.get('/pineco', legendariesController.getAllLegendary);
+router.get('/all', legendariesController.getAllLegendary);
 
 
 
