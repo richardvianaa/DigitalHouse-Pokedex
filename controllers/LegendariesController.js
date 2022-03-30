@@ -1,19 +1,40 @@
-const legendaryModel = require('../models/LegendaryModel');
+const LegendariesService = require('../service/LegendariesService');
 
 const controller = {
-    getAllLegendary: (req, res) => {
-        const model = new legendaryModel("01", "Pineco", "Bagworm", "bug")
-        const model2 = new legendaryModel("02", "Richard", "Bagworm", "bug");
-        const model3 = new legendaryModel("03", "Carlos", "Bagworm", "bug");
-        const model4 = new legendaryModel("04", "Matheus", "Bagworm", "bug");
-        const model5 = new legendaryModel("05", "Julia", "Bagworm", "bug");
-        return res.json([
-            model,
-            model2,
-            model3,
-            model4,
-            model5
-        ])
+    index: (request, response) => {
+        const { id } = request.params;
+        const { name } = request.query;
+
+        const legendary = LegendariesService.ListPokemonData(name);
+
+        return response.json(legendary)
+    },
+    create: (request, response) => {
+        const {
+            name,
+            description,
+            type,
+            healthPoints,
+            specialAttack,
+            defense,
+            attack,
+            experience,
+            especialDefense
+        } = request.body
+
+        const legendary = LegendariesService.createLegendary(
+            name,
+            description,
+            type,
+            healthPoints,
+            specialAttack,
+            defense,
+            attack,
+            experience,
+            especialDefense
+        )
+
+        return response.json(legendary)
     }
 }
 
