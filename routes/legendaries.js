@@ -4,6 +4,8 @@ const controller = require('../controllers/LegendariesController');
 
 
 router.get('/', controller.index);
+
+
 router.post('/', controller.create);
 
 
