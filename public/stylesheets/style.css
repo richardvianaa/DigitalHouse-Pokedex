@@ -317,6 +317,9 @@
                 width: 225px;
                 Height: 59px;
             }
+            .container-txt>button:hover {
+                cursor: pointer;
+            }
             .container-footer {
                 padding: 0 90px 33px 90px;
             }
