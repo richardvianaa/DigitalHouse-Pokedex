@@ -42,6 +42,8 @@
         
         .btn-opcoes {
             display: flex;
+            background: none;
+            cursor: pointer;
         }
         
         .btn-opcoes>img {
@@ -98,19 +100,20 @@
             color: #000000;
         }
         
-        .container-txt>button {
+        .container-txt>a {
             background: #73D677;
-            box-shadow: inset 0px -9px 0px rgba(0, 0, 0, 0.18);
+            box-shadow: 0px 7px 0px #5eaf62;
             border-radius: 11px;
             width: 250px;
             height: 50px;
-            font-weight: 700;
+            font-weight: bold;
             font-size: 17px;
             line-height: 10px;
             margin-top: 36px;
             display: flex;
             align-items: center;
             justify-content: center;
+            color: #000000;
         }
         /* Fim MAIN */
         /*Inicio FOOTER*/
@@ -163,7 +166,7 @@
             .container-txt>p {
                 font-size: 24px;
             }
-            .container-txt>button {
+            .container-txt>a {
                 width: 312.8px;
                 height: 55.11px;
                 font-weight: 700;
@@ -195,7 +198,7 @@
             .container-txt>p {
                 font-size: 30px;
             }
-            .container-txt>button {
+            .container-txt>a {
                 font-size: 25px;
             }
             .container-footer {
@@ -246,7 +249,7 @@
                 line-height: 28px;
                 padding: 0 60px;
             }
-            .container-txt>button {
+            .container-txt>a {
                 width: 231px;
                 height: 66px;
             }
@@ -313,11 +316,11 @@
                 padding: 0;
                 text-align: left;
             }
-            .container-txt>button {
+            .container-txt>a {
                 width: 225px;
                 Height: 59px;
             }
-            .container-txt>button:hover {
+            .container-txt>a:hover {
                 cursor: pointer;
             }
             .container-footer {
@@ -374,7 +377,7 @@
                 font-size: 30px;
                 line-height: 37px;
             }
-            .container-txt>button {
+            .container-txt>a {
                 width: 231px;
                 height: 66px;
             }
